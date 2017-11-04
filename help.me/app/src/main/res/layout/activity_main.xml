@@ -5,15 +5,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000"
     tools:context="com.firstapp.helpme.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="325dp"
+        android:height="100dp"
+        android:background="@color/green"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:width="300dp"
+        android:gravity="center"
+        android:text="Sage and Away From Dangers"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="369dp"/>
+
+    <Button
+        android:id="@+id/dangerButton"
+        android:layout_width="325dp"
+        android:height="100dp"
+        android:background="@color/orange"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Unhurt but still in the area of danger"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="233dp"/>
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="325dp"
+        android:height="100dp"
+        android:background="@color/red"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="In Need of Help"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="102dp"/>
 
 </android.support.constraint.ConstraintLayout>
