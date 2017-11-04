@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#"
     tools:context="com.firstapp.helpme.MainActivity"
     tools:layout_editor_absoluteY="25dp">
 
@@ -17,7 +16,7 @@
         android:layout_marginTop="36dp"
         android:ems="10"
         android:text="Bone Fracture"
-        android:textColor="#000"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
