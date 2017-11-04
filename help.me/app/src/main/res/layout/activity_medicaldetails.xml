@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF00FF"
+    android:background="#"
     tools:context="com.firstapp.helpme.MainActivity"
     tools:layout_editor_absoluteY="25dp">
 
@@ -17,7 +17,7 @@
         android:layout_marginTop="36dp"
         android:ems="10"
         android:text="Bone Fracture"
-        android:textColor="#FFFF00"
+        android:textColor="#000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +43,7 @@ Help them get into a comfortable position, encourage them to rest, and reassure 
 Get professional help:
 
 Call 911 or help them get to the emergency department for professional care."
-        android:textColor="#FFFF"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
