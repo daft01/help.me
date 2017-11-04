@@ -22,4 +22,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, SettingsActivity.class));
     }
 
+    public void lifeThreateningEmergencyOnClicked(View v){
+        startActivity(new Intent(MainActivity.this, LifeThreateningAmergency.class));
+    }
+
 }

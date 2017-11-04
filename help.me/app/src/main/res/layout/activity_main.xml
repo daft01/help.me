@@ -10,7 +10,8 @@
     >
 
     <Button
-        android:id="@+id/helpButton"
+        android:id="@+id/lifeThreateningEmergency"
+        android:onClick="lifeThreateningEmergencyOnClicked"
         android:layout_width="0dp"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -18,7 +19,7 @@
         android:background="@color/red"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="In Need of Help"
+        android:text="life Threatening e\Emergency"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/dangerButton"
@@ -36,6 +37,7 @@
         android:height="100dp"
         android:textSize="20dp"
         android:textStyle="bold"
+
         android:background="@color/orange"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -43,10 +45,10 @@
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/saveButton"
-        app:layout_constraintRight_toRightOf="@+id/helpButton"
+        app:layout_constraintRight_toRightOf="@+id/lifeThreateningEmergency"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="36dp"
-        app:layout_constraintLeft_toLeftOf="@+id/helpButton"/>
+        app:layout_constraintLeft_toLeftOf="@+id/lifeThreateningEmergency"/>
 
     <Button
         android:id="@+id/saveButton"
@@ -69,16 +71,16 @@
 
     <ImageView
         android:id="@+id/resources"
+        android:layout_width="80dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="16dp"
         android:onClick="resourcesButtonClicked"
-        android:layout_width="68dp"
-        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:srcCompat="@drawable/resources"
         tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        tools:layout_constraintLeft_creator="1"/>
 
     <ImageView
         android:id="@+id/settings"
