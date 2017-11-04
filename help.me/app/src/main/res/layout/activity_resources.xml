@@ -5,6 +5,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.firstapp.helpme.ResourcesActivity">
+    tools:context="com.firstapp.helpme.ResourcesActivity"
+    android:background="#000">
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Resources"
+        android:textColor="#FFFF"
+        android:textSize="45dp"
+        tools:layout_editor_absoluteY="58dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compond Fracdtures"
+        tools:layout_editor_absoluteY="161dp"
+        tools:layout_editor_absoluteX="54dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuts"
+        tools:layout_editor_absoluteY="161dp"
+        tools:layout_editor_absoluteX="195dp"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burns"
+        tools:layout_editor_absoluteY="259dp"
+        tools:layout_editor_absoluteX="54dp"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loss of Conscionsness"
+        tools:layout_editor_absoluteY="259dp"
+        tools:layout_editor_absoluteX="195dp"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPR"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="371dp"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strockes"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="371dp"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Psychological Crysis"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="465dp"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poisoning"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="465dp"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hazardons Fluids Into Eyes"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="529dp"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siezures"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="529dp"/>
 </android.support.constraint.ConstraintLayout>

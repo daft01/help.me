@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:width="300dp"
         android:gravity="center"
-        android:text="Sage and Away From Dangers"
+        android:text="Save and Away From Dangers"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
