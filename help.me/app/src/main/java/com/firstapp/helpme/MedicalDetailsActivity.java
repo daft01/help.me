@@ -15,3 +15,4 @@ public class MedicalDetailsActivity extends AppCompatActivity {
     }
 
 }
+
