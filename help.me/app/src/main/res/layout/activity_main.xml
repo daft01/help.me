@@ -6,40 +6,96 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000"
-    tools:context="com.firstapp.helpme.MainActivity">
-
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="325dp"
-        android:height="100dp"
-        android:background="@color/green"
-        android:layout_height="wrap_content"
-        android:width="300dp"
-        android:gravity="center"
-        android:text="Sage and Away From Dangers"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="369dp"/>
-
-    <Button
-        android:id="@+id/dangerButton"
-        android:layout_width="325dp"
-        android:height="100dp"
-        android:background="@color/orange"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Unhurt but still in the area of danger"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="233dp"/>
+    tools:context="com.firstapp.helpme.MainActivity"
+    >
 
     <Button
         android:id="@+id/helpButton"
-        android:layout_width="325dp"
+        android:layout_width="0dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
         android:height="100dp"
         android:background="@color/red"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="In Need of Help"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="102dp"/>
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/dangerButton"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+        />
+
+    <Button
+        android:id="@+id/dangerButton"
+        android:layout_width="0dp"
+        android:height="100dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@color/orange"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Unhurt but still in the area of danger"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintRight_toRightOf="@+id/helpButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintLeft_toLeftOf="@+id/helpButton"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:height="100dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@color/green"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:gravity="center"
+        android:text="Sage and Away From Dangers"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/dangerButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="98dp"
+        app:layout_constraintLeft_toLeftOf="@+id/dangerButton"/>
+
+    <ImageView
+        android:id="@+id/resources"
+        android:onClick="resourcesButtonClicked"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/resources"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/settings"
+        android:onClick="settingsButtonClicked"
+        android:layout_width="58dp"
+        android:layout_height="41dp"
+        app:srcCompat="@drawable/setting"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="7dp"
+        tools:layout_editor_absoluteY="519dp"
+        tools:layout_editor_absoluteX="260dp"
+        android:layout_marginRight="42dp"/>
+
+
 
 </android.support.constraint.ConstraintLayout>
