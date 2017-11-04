@@ -4,32 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
-    tools:context="com.firstapp.helpme.MainActivity">
+    android:background="#FF00FF"
+    tools:context="com.firstapp.helpme.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:text="Bone Fracture"
+        android:textColor="#FFFF00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:text="If you suspect that someone has a broken bone, provide first-aid treatment and help them get professional care:
+Stop any bleeding:
+
+If they’re bleeding, elevate and apply pressure to the wound using a sterile bandage, a clean cloth, or a clean piece of clothing.
+
+Immobilize the injured area:If you suspect they’ve broken a bone in their neck or back, help them stay as still as possible.
+
+If you suspect they’ve broken a bone in one of their limbs, immobilize the area using a splint or sling.
+Apply cold to the area:
+
+Wrap an ice pack or bag of ice cubes in a piece of cloth and apply it to the injured area for up to 10 minutes at a time.
+Treat them for shock:
+
+Help them get into a comfortable position, encourage them to rest, and reassure them. Cover them with a blanket or clothing to keep them warm.
+Get professional help:
+
+Call 911 or help them get to the emergency department for professional care."
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="39dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
 </android.support.constraint.ConstraintLayout>
