@@ -46,7 +46,7 @@ public class LifeThreateningAmergency extends AppCompatActivity {
     public void yesCheck()
     {
         if(numQuestion==1) {
-            intent.putExtra("result", numQuestion);
+            intent.putExtra("num", numQuestion);
             startActivity(intent);
         }
         else if(numQuestion==2){
@@ -62,7 +62,7 @@ public class LifeThreateningAmergency extends AppCompatActivity {
             start();
         }
         else if(numQuestion== 5){
-            intent.putExtra("result", numQuestion+1);
+            intent.putExtra("num", numQuestion+1);
             startActivity(intent);
         }
     }
@@ -73,19 +73,19 @@ public class LifeThreateningAmergency extends AppCompatActivity {
             start();
         }
         else if(numQuestion==2){
-            intent.putExtra("result", numQuestion);
+            intent.putExtra("num", numQuestion);
             startActivity(intent);
         }
         else if(numQuestion==3){
-            intent.putExtra("result", numQuestion);
+            intent.putExtra("num", numQuestion);
             startActivity(intent);
         }
         else if(numQuestion==4){
-            intent.putExtra("result", numQuestion);
+            intent.putExtra("num", numQuestion);
             startActivity(intent);
         }
         else if(numQuestion== 5){
-            intent.putExtra("result", numQuestion);
+            intent.putExtra("num", numQuestion);
             startActivity(intent);
         }
     }

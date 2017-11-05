@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Results extends AppCompatActivity {
 
@@ -15,35 +16,48 @@ public class Results extends AppCompatActivity {
         TextView help = (TextView) findViewById(R.id.help);
         Intent intent = getIntent();
         int num = intent.getIntExtra("num", 0);
-        String str = "Here is Some Information While the Help Arrives";
 
         if(num == 1) {
-            title.setText(str);
+            help.setText("If you suspect that someone has a broken bone, provide first-aid treatment and help them get professional care: Stop any bleeding:\nIf they’re bleeding, elevate and apply pressure to the wound using a sterile bandage, a clean cloth, or a clean piece of clothing\nImmobilize the injured area:If you suspect they’ve broken a bone in their neck or back, help them stay as still as possible\nIf you suspect they’ve broken a bone in one of their limbs, immobilize the area using a splint or sling.Apply cold to the area:\nWrap an ice pack or bag of ice cubes in a piece of cloth and apply it to the injured area for up to 10 minutes at a time. Treat them for shock:\nHelp them get into a comfortable position, encourage them to rest, and reassure them. Cover them with a blanket or clothing to keep them warm.Get professional help:\nCall 911 or help them get to the emergency department for professional care.");
+            Toast.makeText(this, "The authorities and your friends have been notified",
+                    Toast.LENGTH_LONG).show();
             help.setText("If you have not been ordered to evacuate, stay in a safe area or shelter during a natural disaster. In your home, a safe area may be a ground floor interior room, closet or bathroom. Be sure you have access to your survival kit in case you are in an emergency event that lasts several days.\n Listen to your portable radio for important updates and instructions from local authorities. Remember to have a battery-powered radio in your survival kit. Some radios are now equipped with multiple power sources, such as batteries, solar panels and a hand crank\n If power is lost, use a generator with caution. Make sure conditions are safe before operating a portable generator. Only operate it outside — away from windows, doors or vents. Follow all manufacturer’s instructions.\n Stay in your safe area and do not drive until the danger has passed. Resist the temptation to check on your property until you are sure it is safe to do so.");
         }
         else if(num ==2){
-            title.setText(str);
+            help.setText("If you suspect that someone has a broken bone, provide first-aid treatment and help them get professional care: Stop any bleeding:\nIf they’re bleeding, elevate and apply pressure to the wound using a sterile bandage, a clean cloth, or a clean piece of clothing\nImmobilize the injured area:If you suspect they’ve broken a bone in their neck or back, help them stay as still as possible\nIf you suspect they’ve broken a bone in one of their limbs, immobilize the area using a splint or sling.Apply cold to the area:\nWrap an ice pack or bag of ice cubes in a piece of cloth and apply it to the injured area for up to 10 minutes at a time. Treat them for shock:\nHelp them get into a comfortable position, encourage them to rest, and reassure them. Cover them with a blanket or clothing to keep them warm.Get professional help:\nCall 911 or help them get to the emergency department for professional care.");
+            Toast.makeText(getApplicationContext(), "The authorities and your friends have been notified",
+                    Toast.LENGTH_LONG).show();
             help.setText("If you have not been ordered to evacuate, stay in a safe area or shelter during a natural disaster. In your home, a safe area may be a ground floor interior room, closet or bathroom. Be sure you have access to your survival kit in case you are in an emergency event that lasts several days.\n Listen to your portable radio for important updates and instructions from local authorities. Remember to have a battery-powered radio in your survival kit. Some radios are now equipped with multiple power sources, such as batteries, solar panels and a hand crank\n If power is lost, use a generator with caution. Make sure conditions are safe before operating a portable generator. Only operate it outside — away from windows, doors or vents. Follow all manufacturer’s instructions.\n Stay in your safe area and do not drive until the danger has passed. Resist the temptation to check on your property until you are sure it is safe to do so.");
         }
         else if(num ==3){
-            title.setText(str);
+            help.setText("If you suspect that someone has a broken bone, provide first-aid treatment and help them get professional care: Stop any bleeding:\nIf they’re bleeding, elevate and apply pressure to the wound using a sterile bandage, a clean cloth, or a clean piece of clothing\nImmobilize the injured area:If you suspect they’ve broken a bone in their neck or back, help them stay as still as possible\nIf you suspect they’ve broken a bone in one of their limbs, immobilize the area using a splint or sling.Apply cold to the area:\nWrap an ice pack or bag of ice cubes in a piece of cloth and apply it to the injured area for up to 10 minutes at a time. Treat them for shock:\nHelp them get into a comfortable position, encourage them to rest, and reassure them. Cover them with a blanket or clothing to keep them warm.Get professional help:\nCall 911 or help them get to the emergency department for professional care.");
+            Toast.makeText(getApplicationContext(), "The authorities and your friends have been notified",
+                    Toast.LENGTH_LONG).show();
             help.setText("If you have not been ordered to evacuate, stay in a safe area or shelter during a natural disaster. In your home, a safe area may be a ground floor interior room, closet or bathroom. Be sure you have access to your survival kit in case you are in an emergency event that lasts several days.\n Listen to your portable radio for important updates and instructions from local authorities. Remember to have a battery-powered radio in your survival kit. Some radios are now equipped with multiple power sources, such as batteries, solar panels and a hand crank\n If power is lost, use a generator with caution. Make sure conditions are safe before operating a portable generator. Only operate it outside — away from windows, doors or vents. Follow all manufacturer’s instructions.\n Stay in your safe area and do not drive until the danger has passed. Resist the temptation to check on your property until you are sure it is safe to do so.");
         }
         else if(num ==4){
-            title.setText(str);
+            help.setText("If you suspect that someone has a broken bone, provide first-aid treatment and help them get professional care: Stop any bleeding:\nIf they’re bleeding, elevate and apply pressure to the wound using a sterile bandage, a clean cloth, or a clean piece of clothing\nImmobilize the injured area:If you suspect they’ve broken a bone in their neck or back, help them stay as still as possible\nIf you suspect they’ve broken a bone in one of their limbs, immobilize the area using a splint or sling.Apply cold to the area:\nWrap an ice pack or bag of ice cubes in a piece of cloth and apply it to the injured area for up to 10 minutes at a time. Treat them for shock:\nHelp them get into a comfortable position, encourage them to rest, and reassure them. Cover them with a blanket or clothing to keep them warm.Get professional help:\nCall 911 or help them get to the emergency department for professional care.");
+            Toast.makeText(getApplicationContext(), "The authorities and your friends have been notified",
+                    Toast.LENGTH_LONG).show();
             help.setText("If you have not been ordered to evacuate, stay in a safe area or shelter during a natural disaster. In your home, a safe area may be a ground floor interior room, closet or bathroom. Be sure you have access to your survival kit in case you are in an emergency event that lasts several days.\n Listen to your portable radio for important updates and instructions from local authorities. Remember to have a battery-powered radio in your survival kit. Some radios are now equipped with multiple power sources, such as batteries, solar panels and a hand crank\n If power is lost, use a generator with caution. Make sure conditions are safe before operating a portable generator. Only operate it outside — away from windows, doors or vents. Follow all manufacturer’s instructions.\n Stay in your safe area and do not drive until the danger has passed. Resist the temptation to check on your property until you are sure it is safe to do so.");
         }
         else if(num ==5){
-            title.setText(str);
+            help.setText("If you suspect that someone has a broken bone, provide first-aid treatment and help them get professional care: Stop any bleeding:\nIf they’re bleeding, elevate and apply pressure to the wound using a sterile bandage, a clean cloth, or a clean piece of clothing\nImmobilize the injured area:If you suspect they’ve broken a bone in their neck or back, help them stay as still as possible\nIf you suspect they’ve broken a bone in one of their limbs, immobilize the area using a splint or sling.Apply cold to the area:\nWrap an ice pack or bag of ice cubes in a piece of cloth and apply it to the injured area for up to 10 minutes at a time. Treat them for shock:\nHelp them get into a comfortable position, encourage them to rest, and reassure them. Cover them with a blanket or clothing to keep them warm.Get professional help:\nCall 911 or help them get to the emergency department for professional care.");
+            Toast.makeText(getApplicationContext(), "The authorities and your friends have been notified",
+                    Toast.LENGTH_LONG).show();
             help.setText("If you have not been ordered to evacuate, stay in a safe area or shelter during a natural disaster. In your home, a safe area may be a ground floor interior room, closet or bathroom. Be sure you have access to your survival kit in case you are in an emergency event that lasts several days.\n Listen to your portable radio for important updates and instructions from local authorities. Remember to have a battery-powered radio in your survival kit. Some radios are now equipped with multiple power sources, such as batteries, solar panels and a hand crank\n If power is lost, use a generator with caution. Make sure conditions are safe before operating a portable generator. Only operate it outside — away from windows, doors or vents. Follow all manufacturer’s instructions.\n Stay in your safe area and do not drive until the danger has passed. Resist the temptation to check on your property until you are sure it is safe to do so.");
         }
         else if(num ==6){
-            title.setText(str);
+            help.setText("If you suspect that someone has a broken bone, provide first-aid treatment and help them get professional care: Stop any bleeding:\nIf they’re bleeding, elevate and apply pressure to the wound using a sterile bandage, a clean cloth, or a clean piece of clothing\nImmobilize the injured area:If you suspect they’ve broken a bone in their neck or back, help them stay as still as possible\nIf you suspect they’ve broken a bone in one of their limbs, immobilize the area using a splint or sling.Apply cold to the area:\nWrap an ice pack or bag of ice cubes in a piece of cloth and apply it to the injured area for up to 10 minutes at a time. Treat them for shock:\nHelp them get into a comfortable position, encourage them to rest, and reassure them. Cover them with a blanket or clothing to keep them warm.Get professional help:\nCall 911 or help them get to the emergency department for professional care.");
+            Toast.makeText(getApplicationContext(), "The authorities and your friends have been notified",
+                    Toast.LENGTH_LONG).show();
             help.setText("If you have not been ordered to evacuate, stay in a safe area or shelter during a natural disaster. In your home, a safe area may be a ground floor interior room, closet or bathroom. Be sure you have access to your survival kit in case you are in an emergency event that lasts several days.\n Listen to your portable radio for important updates and instructions from local authorities. Remember to have a battery-powered radio in your survival kit. Some radios are now equipped with multiple power sources, such as batteries, solar panels and a hand crank\n If power is lost, use a generator with caution. Make sure conditions are safe before operating a portable generator. Only operate it outside — away from windows, doors or vents. Follow all manufacturer’s instructions.\n Stay in your safe area and do not drive until the danger has passed. Resist the temptation to check on your property until you are sure it is safe to do so.");
         }
         else if(num ==7){
             title.setText("Fractures");
             help.setText("If you suspect that someone has a broken bone, provide first-aid treatment and help them get professional care: Stop any bleeding:\nIf they’re bleeding, elevate and apply pressure to the wound using a sterile bandage, a clean cloth, or a clean piece of clothing\nImmobilize the injured area:If you suspect they’ve broken a bone in their neck or back, help them stay as still as possible\nIf you suspect they’ve broken a bone in one of their limbs, immobilize the area using a splint or sling.Apply cold to the area:\nWrap an ice pack or bag of ice cubes in a piece of cloth and apply it to the injured area for up to 10 minutes at a time. Treat them for shock:\nHelp them get into a comfortable position, encourage them to rest, and reassure them. Cover them with a blanket or clothing to keep them warm.Get professional help:\nCall 911 or help them get to the emergency department for professional care.");
+            Toast.makeText(getApplicationContext(), "The authorities and your friends have been notified",
+                    Toast.LENGTH_LONG).show();
         }
         else if(num ==8){
             title.setText("Cuts");
@@ -97,20 +111,10 @@ public class Results extends AppCompatActivity {
                     "Poison in the eye. Gently flush the eye with cool or lukewarm water for 20 minutes or until help arrives.\n" +
                     "Inhaled poison:  Get the person into fresh air as soon as possible.\n" +
                     "If the person vomits, turn his or her head to the side to prevent choking.\n" +
-                    "Begin CPR if the person shows no signs of life, such as moving, breathing or coughing.\n" +
-                    "\n" +
-                    "\n" +
-                    "[11:15] \n" +
-                    "Seizure\n" +
-                    "1. Prevent Choking\n" +
-                    "Loosen clothing around the person's neck.\n" +
-                    "Roll the person on his or her side to keep the airway open.\n" +
-                    "Don't put anything into the person's mouth.\n" +
-                    "2. Protect From Injury\n" +
-                    "Move sharp objects, such as glassware or furniture, away from the person.");
+                    "Begin CPR if the person shows no signs of life, such as moving, breathing or coughing.\n");
         }
         else if(num ==15){
-            title.setText("Hazardons Fluit Into Eyes");
+            title.setText("Hazardons Fluit\nInto Eyes");
             help.setText("");
         }
         else if(num ==16){
