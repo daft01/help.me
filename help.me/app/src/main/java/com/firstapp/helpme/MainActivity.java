@@ -46,4 +46,10 @@ public class MainActivity extends AppCompatActivity {
         i = new Intent(getApplicationContext(), MapsActivity.class);
         startActivity(i);
     }
+
+    public void contanctClicked(View v){
+        Intent i;
+        i = new Intent(getApplicationContext(), ContactsActivity.class);
+        startActivity(i);
+    }
 }
