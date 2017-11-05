@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/question"
         android:layout_width="358dp"
         android:layout_height="186dp"
         android:text="TextView"

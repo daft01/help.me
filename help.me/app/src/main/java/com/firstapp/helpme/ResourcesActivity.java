@@ -17,4 +17,6 @@ public class ResourcesActivity extends AppCompatActivity {
     public void resourcesButtonClicked(View v){
         startActivity(new Intent(ResourcesActivity.this, MedicalDetailsActivity.class));
     }
+
+
 }
