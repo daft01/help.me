@@ -13,6 +13,7 @@
         android:id="@+id/lifeThreateningEmergency"
         android:layout_width="276dp"
         android:layout_height="181dp"
+        android:layout_marginBottom="16dp"
         android:height="100dp"
         android:background="@color/red"
         android:gravity="center"
@@ -21,10 +22,9 @@
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.635"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"/>
@@ -102,6 +102,17 @@
         app:layout_constraintTop_toBottomOf="@+id/saveButton"
         app:layout_constraintVertical_bias="0.791"
         app:srcCompat="@drawable/mappic"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="291dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toTopOf="@+id/lifeThreateningEmergency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"/>
 
 
 </android.support.constraint.ConstraintLayout>
