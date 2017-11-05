@@ -27,7 +27,7 @@
         </activity>
         <activity android:name=".SettingsActivity">
         </activity>
-        <activity android:name=".LifeThreateningAmergency">
+        <activity android:name=".LifeThreateningEmergency">
         </activity>
         <activity android:name=".Results">
         </activity>

@@ -1,6 +1,5 @@
 package com.firstapp.helpme;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void lifeThreateningEmergencyOnClicked(View v){
-        startActivity(new Intent(MainActivity.this, LifeThreateningAmergency.class));
+        startActivity(new Intent(MainActivity.this, LifeThreateningEmergency.class));
         mSoundPool.play(clickButton, 1.0f, 1.0f, 0, 0, 1.0f);
     }
 
