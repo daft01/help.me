@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class LifeThreateningAmergency extends AppCompatActivity {
+public class LifeThreateningEmergency extends AppCompatActivity {
 
     private SoundPool mSoundPool;
     private TextView question;
@@ -18,7 +18,7 @@ public class LifeThreateningAmergency extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_life_threatening_amergency);
+        setContentView(R.layout.activity_life_threatening_emergency);
         mSoundPool = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         clickButton = mSoundPool.load(getApplicationContext(), R.raw.click, 1);
         question = (TextView) findViewById(R.id.question);
@@ -31,7 +31,7 @@ public class LifeThreateningAmergency extends AppCompatActivity {
     {
         switch(numQuestion) {
             case 1: question.setText("Are You Able to walk?");
-                    break;
+                break;
             case 2: question.setText("Do You Have Spontanuous Breathing?");
                 break;
             case 3: question.setText("Is Your Respiratory Rate More Than 30?");
