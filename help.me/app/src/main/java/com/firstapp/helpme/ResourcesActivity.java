@@ -20,10 +20,48 @@ public class ResourcesActivity extends AppCompatActivity {
         intent = new Intent(getApplicationContext(), Results.class);
     }
 
-    public void resourcesButtonClicked(View v){
+    public void fracturesButtonClicked(View v){
        intent.putExtra("num", 7);
        startActivity(intent);
     }
+    public void cutsButtonClicked(View v){
+        intent.putExtra("num", 8);
+        startActivity(intent);
+    }
+    public void burnsButtonClicked(View v){
+        intent.putExtra("num", 9);
+        startActivity(intent);
+    }
+    public void conscioussButtonClicked(View v){
+        intent.putExtra("num", 10);
+        startActivity(intent);
+    }
+    public void cprButtonClicked(View v){
+        intent.putExtra("num", 11);
+        startActivity(intent);
+    }
+    public void strokesButtonClicked(View v){
+        intent.putExtra("num", 12);
+        startActivity(intent);
+    }
+    public void crisisButtonClicked(View v){
+        intent.putExtra("num", 13);
+        startActivity(intent);
+    }
+    public void poisoningButtonClicked(View v){
+        intent.putExtra("num", 14);
+        startActivity(intent);
+    }
+    public void fluidsButtonClicked(View v){
+        intent.putExtra("num", 15);
+        startActivity(intent);
+    }
+    public void seizuresButtonClicked(View v){
+        intent.putExtra("num", 16);
+        startActivity(intent);
+    }
+
+
 
 
 }
