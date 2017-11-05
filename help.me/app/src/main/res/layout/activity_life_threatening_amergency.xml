@@ -11,8 +11,8 @@
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="358dp"
-        android:layout_height="186dp"
+        android:layout_width="351dp"
+        android:layout_height="223dp"
         android:text="TextView"
         android:textAlignment="center"
         android:textColor="#ffff"
@@ -23,36 +23,37 @@
 
     <Button
         android:id="@+id/yesButton"
-        android:onClick="yesButtonClicked"
         android:layout_width="163dp"
         android:layout_height="228dp"
         android:width="165dp"
         android:height="180dp"
         android:background="@color/green"
+        android:onClick="yesButtonClicked"
         android:text="YES"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/noButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/question"
         app:layout_constraintVertical_bias="0.766"/>
 
     <Button
         android:id="@+id/noButton"
-        android:onClick="noButtonClicked"
         android:layout_width="173dp"
         android:layout_height="226dp"
+        android:layout_marginBottom="40dp"
         android:width="165dp"
         android:height="180dp"
         android:background="@color/red"
+        android:onClick="noButtonClicked"
         android:text="NO"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/yesButton"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:layout_constraintVertical_bias="0.974"/>
 
 </android.support.constraint.ConstraintLayout>
