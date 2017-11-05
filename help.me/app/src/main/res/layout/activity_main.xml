@@ -32,7 +32,6 @@
 
     <Button
         android:id="@+id/saveButton"
-        android:onClick="saveButtonClicked"
         android:layout_width="279dp"
         android:layout_height="190dp"
         android:layout_marginBottom="100dp"
@@ -40,6 +39,7 @@
         android:height="100dp"
         android:background="@color/green"
         android:gravity="center"
+        android:onClick="saveButtonClicked"
         android:text="Save"
         android:textSize="50dp"
         android:textStyle="bold"
@@ -56,7 +56,7 @@
         android:layout_height="63dp"
         android:onClick="resourcesButtonClicked"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/settings"
+        app:layout_constraintEnd_toStartOf="@+id/map"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/groups"
         app:layout_constraintTop_toBottomOf="@+id/saveButton"
@@ -66,14 +66,15 @@
 
     <ImageView
         android:id="@+id/settings"
-        android:layout_width="65dp"
-        android:layout_height="50dp"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
         android:onClick="settingsButtonClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/resources"
+        app:layout_constraintStart_toEndOf="@+id/map"
         app:layout_constraintTop_toBottomOf="@+id/saveButton"
+        app:layout_constraintVertical_bias="0.652"
         app:srcCompat="@drawable/setting"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintRight_creator="1"/>
@@ -88,6 +89,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/saveButton"
         app:srcCompat="@drawable/contacts"/>
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:onClick="mapClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settings"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/resources"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton"
+        app:layout_constraintVertical_bias="0.791"
+        app:srcCompat="@drawable/mappic"/>
 
 
 </android.support.constraint.ConstraintLayout>

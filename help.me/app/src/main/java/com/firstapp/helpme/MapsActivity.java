@@ -1,6 +1,7 @@
 package com.firstapp.helpme;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -26,7 +27,7 @@ import java.util.List;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-
+    private Intent intent;
     LocationManager mLocationManager;
 
     @Override
@@ -38,6 +39,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         mLocationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        intent = getIntent();
+        int num = intent.getIntExtra("num", 0);
+        if(num == 1)
+        {
+            Toast.makeText(this, "Message has been send to everyone in your contacts saying that your okay!",
+                    Toast.LENGTH_LONG).show();
+        }
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
@@ -48,8 +56,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-        Toast.makeText(this, "Message has been send to everyone in your contacts saying that your okay!",
-                Toast.LENGTH_LONG).show();
+
         /*
         if(mLocationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)){
             mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, new LocationListener() {

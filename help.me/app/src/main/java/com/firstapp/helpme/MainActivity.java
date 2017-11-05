@@ -36,8 +36,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void saveButtonClicked(View v){
-        startActivity(new Intent(MainActivity.this, MapsActivity.class));
+        Intent intent;
+        intent = new Intent(getApplicationContext(), MapsActivity.class);
+        intent.putExtra("num", 1);
+        startActivity(intent);
     }
 
-
+    public void mapClicked(View v){
+        Intent i;
+        i = new Intent(getApplicationContext(), MapsActivity.class);
+        startActivity(i);
+    }
 }

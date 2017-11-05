@@ -1,6 +1,8 @@
 package com.firstapp.helpme;
 
 import android.content.Intent;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,13 +10,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Results extends AppCompatActivity {
-
+    private SoundPool mSoundPool;
+    private int risenClick;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
         TextView title = (TextView) findViewById(R.id.title);
         TextView help = (TextView) findViewById(R.id.help);
+        mSoundPool = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
+        risenClick = mSoundPool.load(getApplicationContext(), R.raw.alert, 1);
         Intent intent = getIntent();
         int num = intent.getIntExtra("num", 0);
 
@@ -131,7 +137,17 @@ public class Results extends AppCompatActivity {
     }
 
     public void sirenClicked(View v){
-        
+        mSoundPool.play(risenClick, 1.0f, 1.0f, 0, 10, 1.0f);
+    }
+
+    public void flashLightClicked(View v){
+        ;
+    }
+
+    public void mapClicked(View v){
+        Intent i;
+        i = new Intent(getApplicationContext(), MapsActivity.class);
+        startActivity(i);
     }
 
 
