@@ -5,6 +5,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000"
     tools:context="com.firstapp.helpme.Results">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="49dp"/>
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="305dp"
+        android:layout_height="412dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/cuts"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="28dp"/>
 </android.support.constraint.ConstraintLayout>

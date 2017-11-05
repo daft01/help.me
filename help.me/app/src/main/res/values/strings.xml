@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">help.me</string>
+
+    <string name="fractures">If you suspect that someone has a broken bone, provide first-aid treatment and help them get professional care:
+Stop any bleeding:\nIf they’re bleeding, elevate and apply pressure to the wound using a sterile bandage, a clean cloth, or a clean piece of clothing\nImmobilize the injured area:If you suspect they’ve broken a bone in their neck or back, help them stay as still as possible\nIf you suspect they’ve broken a bone in one of their limbs, immobilize the area using a splint or sling.
+Apply cold to the area:\nWrap an ice pack or bag of ice cubes in a piece of cloth and apply it to the injured area for up to 10 minutes at a time.
+Treat them for shock:\nHelp them get into a comfortable position, encourage them to rest, and reassure them. Cover them with a blanket or clothing to keep them warm.
+Get professional help:\nCall 911 or help them get to the emergency department for professional care.</string>
+
+    <string name="cpr">1. Push hard, push fast. Place your hands, one on top of the other, in the middle of the chest. Use your body weight to help you administer compressions that are at least 2 inches deep and delivered at a rate of at least 100 compressions per minute.\n\n2.Deliver rescue breaths. With the person\'s head tilted back slightly and the chin lifted, pinch the nose shut and place your mouth over the person\'s mouth to make a complete seal. Blow into the person\'s mouth to make the chest rise. Deliver two rescue breaths, then continue compressions.Note: If the chest does not rise with the initial rescue breath, re-tilt the head before delivering the second breath. If the chest doesn\'t rise with the second breath, the person may be choking. After each subsequent set of 100 chest compressions, and before attempting breaths, look for an object and, if seen, remove it.\n
+\n3. Continue CPR steps. Keep performing cycles of chest compressions and breathing until the person exhibits signs of life, such as breathing, an AED becomes available, or EMS or a trained medical responder arrives on scene.
+Note: End the cycles if the scene becomes unsafe or you cannot continue performing CPR due to exhaustion.</string>
+
+    <string name="cuts">Wash your hands with soap or antibacterial cleanser to prevent infection.\n
+\nThen, wash the cut thoroughly with mild soap and water.
+\nUse direct pressure to stop the bleeding.
+\nApply antibacterial ointment and a clean bandage that will not stick to the wound.\nFOR MINOR PUNCTURES
+Wash your hands with soap or antibacterial cleanser to prevent infection.
+Rinse the puncture for 5 minutes under running water. Then wash with soap.
+Look (but do not poke around) for objects inside the wound. If found, don't remove it. Go to your emergency or urgent care center.
+If you can't see anything inside the wound, but a piece of the object that caused the injury is missing, also seek medical attention.
+Apply antibacterial ointment and a clean bandage that will not stick to the wound.
+Scarring is a potential complication of any wound. Prompt first aid and the prevention of infection reduce the risk of scarring</string>
+
+    <string name="walk">If you have not been ordered to evacuate, stay in a safe area or shelter during a natural disaster. In your home, a safe area may be a ground floor interior room, closet or bathroom. Be sure you have access to your survival kit in case you are in an emergency event that lasts several days.\n
+    Listen to your portable radio for important updates and instructions from local authorities. Remember to have a battery-powered radio in your survival kit. Some radios are now equipped with multiple power sources, such as batteries, solar panels and a hand crank\n
+    If power is lost, use a generator with caution. Make sure conditions are safe before operating a portable generator. Only operate it outside — away from windows, doors or vents. Follow all manufacturer’s instructions.\n
+    Stay in your safe area and do not drive until the danger has passed. Resist the temptation to check on your property until you are sure it is safe to do so.</string>
 </resources>

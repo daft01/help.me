@@ -19,7 +19,7 @@
         android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/yesButton"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp"/>
+        tools:layout_editor_absoluteX="5dp"/>
 
     <Button
         android:id="@+id/yesButton"

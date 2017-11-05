@@ -20,8 +20,6 @@
         </activity>
         <activity android:name=".SettingsActivity">
         </activity>
-        <activity android:name=".MedicalDetailsActivity">
-        </activity>
         <activity android:name=".LifeThreateningAmergency">
         </activity>
         <activity android:name=".Results">
