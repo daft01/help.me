@@ -3,6 +3,7 @@ package com.firstapp.helpme;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -127,6 +128,10 @@ public class Results extends AppCompatActivity {
                     "Move sharp objects, such as glassware or furniture, away from the person.");
         }
 
+    }
+
+    public void sirenClicked(View v){
+        
     }
 
 

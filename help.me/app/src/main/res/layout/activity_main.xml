@@ -32,6 +32,7 @@
 
     <Button
         android:id="@+id/saveButton"
+        android:onClick="saveButtonClicked"
         android:layout_width="279dp"
         android:layout_height="190dp"
         android:layout_marginBottom="100dp"

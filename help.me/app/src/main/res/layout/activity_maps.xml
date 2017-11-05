@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.firstapp.helpme.MapsActivity"
+    >
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Find Friends and Family"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="35dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="92dp"
+            tools:context="com.firstapp.helpme.MapsActivity"/>
+
+        <Button
+            android:id="@+id/family"
+            android:onClick="familyClicked"
+            android:background="@color/yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/map"
+            android:layout_below="@+id/map"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="29dp"
+            android:width="110dp"
+            android:height="70dp"
+            android:text="Family"/>
+
+        <Button
+            android:id="@+id/help"
+            android:onClick="helpClicked"
+            android:background="@color/yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/school"
+            android:layout_alignBottom="@+id/school"
+            android:layout_alignStart="@+id/friends"
+            android:width="110dp"
+            android:height="70dp"
+            android:text="help"/>
+
+        <Button
+            android:id="@+id/school"
+            android:onClick="schoolClicked"
+            android:background="@color/yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/family"
+            android:layout_below="@+id/friends"
+            android:layout_marginTop="21dp"
+            android:width="110dp"
+            android:height="70dp"
+            android:text="class"/>
+
+        <Button
+            android:id="@+id/friends"
+            android:onClick="friendsClicked"
+            android:background="@color/yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/family"
+            android:layout_alignBottom="@+id/family"
+            android:layout_alignEnd="@+id/map"
+            android:layout_marginEnd="32dp"
+            android:width="110dp"
+            android:height="70dp"
+            android:text="Friends"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

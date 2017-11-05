@@ -10,25 +10,26 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="381dp"
-        android:layout_height="97dp"
+        android:layout_width="382dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:text="Here is Some\nInformation"
         android:textAlignment="center"
         android:textColor="@color/yellow"
         android:textSize="41dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
         app:layout_constraintVertical_bias="1.0"/>
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_marginTop="110dp"
-        android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="110dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -39,8 +40,8 @@
 
             <TextView
                 android:id="@+id/help"
-                android:layout_width="340dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="456dp"
                 android:layout_marginBottom="16dp"
                 android:text="@string/walk"
                 android:textColor="#fff"
@@ -48,5 +49,39 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 tools:layout_editor_absoluteX="28dp"/>
         </LinearLayout>
+
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/siren"
+        android:onClick="sirenClicked"
+        android:layout_width="85dp"
+        android:layout_height="66dp"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+        app:srcCompat="@drawable/risenpic"
+        tools:layout_editor_absoluteY="593dp"/>
+
+    <ImageView
+        android:id="@+id/flashLight"
+        android:onClick="flasLightCliced"
+        android:layout_width="89dp"
+        android:layout_height="81dp"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+        app:srcCompat="@drawable/flashlight"
+        tools:layout_editor_absoluteY="593dp"/>
+
+    <ImageView
+        android:id="@+id/map"
+        android:onClick="mapClicked"
+        android:layout_width="99dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+        app:srcCompat="@drawable/mappic"
+        tools:layout_editor_absoluteY="587dp"/>
+
 </android.support.constraint.ConstraintLayout>
