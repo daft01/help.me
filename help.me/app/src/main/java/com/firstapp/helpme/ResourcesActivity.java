@@ -15,21 +15,10 @@ public class ResourcesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resources);
-        resourceDetails = new HashMap<>();
-        resourceDetails.put("Burns","burnDetails");
-        resourceDetails.put("Cuts","cutsDetails");
     }
 
     public void resourcesButtonClicked(View v){
-        Intent intent = new Intent(ResourcesActivity.this, MedicalDetailsActivity.class);
-        Button b = (Button) v;
-        intent.putExtra("type", b.getText());
-        String details = resourceDetails.get(b.getText());
-        if(details == null) {
-            details = "empty string";
-        }
-        intent.putExtra("details", details);
-        startActivity(intent);
+        startActivity(new Intent(ResourcesActivity.this, MedicalDetailsActivity.class));
     }
 
 
