@@ -20,13 +20,14 @@
         android:text="Help!"
         android:textSize="50dp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_editor_absoluteY="75dp"/>
+        tools:layout_constraintRight_creator="1"/>
     />
 
     <Button
@@ -52,37 +53,40 @@
         android:id="@+id/resources"
         android:layout_width="84dp"
         android:layout_height="63dp"
-        android:layout_marginBottom="4dp"
         android:onClick="resourcesButtonClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/settings"
-        app:layout_constraintHorizontal_bias="0.826"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/groups"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton"
         app:srcCompat="@drawable/resources"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"/>
 
     <ImageView
         android:id="@+id/settings"
-        android:layout_width="67dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="7dp"
-        android:layout_marginRight="42dp"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
         android:onClick="settingsButtonClicked"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/resources"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton"
         app:srcCompat="@drawable/setting"
         tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintRight_creator="1"
-        />
+        tools:layout_constraintRight_creator="1"/>
 
     <ImageView
         android:id="@+id/groups"
-        android:layout_width="68dp"
-        android:layout_height="98dp"
-        app:srcCompat="@drawable/contacts"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="485dp"/>
+        android:layout_width="64dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/resources"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton"
+        app:srcCompat="@drawable/contacts"/>
 
 
 </android.support.constraint.ConstraintLayout>
