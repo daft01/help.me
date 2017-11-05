@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".MedicalDetailsActivity">
         </activity>
+        <activity android:name=".LifeThreateningAmergency">
+        </activity>
     </application>
 
 </manifest>
